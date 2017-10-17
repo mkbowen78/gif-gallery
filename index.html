@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Giphy Project</title>
+
+  <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body onload="renderButtons()">
+
+    <br><br><br> <!--  need to find a solution to fix this... -->
+
+  <!-- Header Bar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">KGDB - Kevin's Gif Database</a>
+      </div>
+    </nav>
+
+  <!-- Page Content -->
+    <div class="container">
+
+      <div class="jumbotron"><h1>Search</h1>
+        <form id="topics-form">
+          <label for="topics-input">New Topic</label>
+          <input type="text" id="topics-input"><br>
+          <!-- button generates new topic buttion to be added -->
+          <button id="add-topics" type="sumbit" class="btn btn-primary" value="ADD!">Add</button>
+        </form>
+
+  <!-- Rendered Buttons will display here  -->
+        <div id="buttons-view"></div>
+      </div>
+
+  <!-- gifs will display here -->
+      <div class="row text-center text-lg-left" id="topics-view">
+      </div>
+
+    </div>
+  <!-- /.container -->
+
+  <!-- Bootstrap + JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <!-- my javascript -->
+    <script src="assets/javascript/gallery.js"></script>
+
+  </body>
+
+</html>
